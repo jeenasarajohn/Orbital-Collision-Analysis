@@ -1,0 +1,12 @@
+# Ignore backup and autosave files
+*.asv
+*.autosave
+*.slxc
+*.slx~
+*.m~
+*.tmp
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.log
