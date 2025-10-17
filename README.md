@@ -4,6 +4,12 @@ This project demonstrates a simplified orbital collision risk assessment using:
 - **Python (SGP4)** — to fetch real Two-Line Element (TLE) data from [CelesTrak](https://celestrak.org/NORAD/elements/) and propagate orbits into Earth-Centered Inertial (ECI) coordinates.
 - **MATLAB (CARA Analysis Tool)** — to compute and visualize collision probability using NASA's 2D Foster and Hall methods.
 
+## 📂 Repository Overview
+
+- [01_fetch_tle_propagate.py](01_fetch_tle_propagate.py) — Fetches TLE data and propagates orbits using SGP4  
+- [02_run_Pc2D_Foster_Hall.m](02_run_Pc2D_Foster_Hall.m) — Implements NASA’s CARA 2D collision probability method  
+- [requirements.txt](requirements.txt) — Python dependencies  
+
 ## 🛰 Data Source
 TLE data for:
 - **ISS (ZARYA)** from `stations.txt`
@@ -24,3 +30,4 @@ fetched directly from CelesTrak using Python's `requests` and `sgp4` libraries.
 ```bash
 # Python: fetch real orbital data
 python fetch_tle_propagate.py
+
